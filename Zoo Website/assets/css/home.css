@@ -1,0 +1,155 @@
+/* general styles */
+:root{
+    --primary-color: #f1c40f;
+    --text-color: rgb(68, 64, 64);
+}
+html{
+    scroll-behavior: smooth;
+}
+/* header styles */
+header {
+    background-image: url(../images/gallery10.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 80vh;
+    color: white;
+}
+header *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* nav styles */
+nav{
+    display: flex;
+    justify-content: space-around;
+    background: white;
+    padding: 0 8rem;
+    align-items: center;
+    position: fixed;
+    z-index: 50;
+    top: 0;
+    width: 100vw;
+    box-shadow: 0px 1px 5px rgb(110, 109, 109);
+}
+nav h2{
+    color: rgb(85, 78, 78);
+}
+nav .lists{
+    display: flex;
+    justify-content: space-between;
+    justify-self: center;
+    align-items: center;
+    height: 100%;
+}
+nav .lists li{
+    padding: 1.2rem 2rem;
+    list-style: none;
+    height: 100%;
+    display: block;
+    border-left: 1px #ffffff solid;
+    border-right: 1px #ffffff solid;
+    transition: .3s background ease-in-out;
+}
+nav .lists li a{
+    color: rgb(51, 45, 45);
+}
+nav .lists li:hover{
+    background: rgba(226, 226, 226, 0.356);
+    border-left: 1px rgb(238, 231, 231) solid;
+    border-right: 1px rgb(238, 231, 231) solid;
+}
+nav li.active:hover{
+    background-color: #ecc113;
+}
+/* header content */
+header .content{
+    display: flex;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+header .content h1{
+    padding: 1.7rem 0;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    text-shadow: 0px 2px 0px black;
+}
+header .content p{
+    padding: 0 10rem;
+    line-height: 2;
+    text-shadow: 0px 1px 0px black;
+}
+header .content a.btn-more{
+    margin-top: .8rem;
+    background-color: var(--primary-color);
+    padding: .7rem 2rem;
+    border-radius: .25rem;
+    transition: .3s background ease-in-out;
+    color: rgb(70, 60, 60);
+}
+header .content a.btn-more:hover{
+    background-color: #dab10d;
+    color: rgb(31, 29, 29);
+}
+nav li.active{
+    background: var(--primary-color);
+}
+
+
+header + .content h3{
+    color: var(--text-color);
+}
+
+/* content styles */
+
+.content-grids h3 + span{
+    background-color: rgb(110, 106, 106);
+}
+/* service */
+.service h3{
+    color: var(--text-color);
+}
+.service .project-info h4{
+    color: rgba(63, 55, 55, 0.897);
+}
+
+.content-bottom .news-head h3{
+    color: var(--text-color);
+}
+.content-bottom .testimonal h3{
+    color: var(--text-color);
+}
+.content-bottom .testimonal h4{
+    color: rgb(107, 102, 102);
+}
+.content-bottom .container .wlid-sec .news-sec{
+    font-weight: 900;
+}
+.content-bottom .container .wlid-sec * span{
+    background-color: rgb(121, 111, 111);
+}
+.content-bottom .container .wlid-sec .read{
+    color: var(--primary-color);
+}
+.content-right .icon-info h4{
+    color: rgb(88, 85, 85);
+    font-weight: bold;
+}
+.content-right .icon-info span{
+    background: #a8720e;
+}
+/* @media(max-width: 940px){
+    nav{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    nav .lists{
+        flex-direction: column;
+    }
+} */

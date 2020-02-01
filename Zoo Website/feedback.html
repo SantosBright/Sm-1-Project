@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Central Zoo | Feedback</title>
+	<link href="/assets/css/bootstrap.min.css" rel='stylesheet' type='text/css' />
+	<link href="/assets/css/style.css" rel='stylesheet' type='text/css' />
+	<link rel="stylesheet" href="assets/css/feedback.css">
+</head>
+<body>
+    <!-- header -->
+	<header>
+        <!-- nav -->
+		<nav>
+            <!-- logos -->
+			<h2>
+				<a href="index.html">
+					<img src="assets/images/CZ II.png" height="50" width="50" style="border-radius: 50%;" alt="logo1">
+					<img src="assets/images/CZ.png" width="200" height="50" alt="logo2">
+				</a>
+            </h2>
+            <!-- links -->
+			<ul class="lists">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="about.html">About Us</a></li class="active">
+                <li><a href="animals.html">Animals</a></li>
+			</ul>
+		</nav>
+    </header>
+    <!-- feedback -->
+    <div class="container">
+        <h2 class="text-center">Feedback Form</h2>
+        <p class="text-center">We would love to hear your thoughts, concerns or problems with anything so we can improve!</p>
+        <hr>
+        <div class="container col-md-6">
+            <!-- feedback form -->
+            <form>
+                <div class="form-group">
+                    <h4>Feedback Type</h4>
+                    <label>
+                        <input type="radio" name="type" required>
+                        Comments
+                    </label>
+                    <label>
+                        <input type="radio" name="type" required>
+                        Bug Report
+                    </label>
+                    <label>
+                        <input type="radio" name="type" required>
+                        Question
+                    </label>
+                </div>
+                <div class="form-group">
+                  <label>
+                      Describe Feedback: *
+                      <textarea required minlength="1" maxlength="2" class="form-control" cols="100" rows="10"></textarea>
+                  </label>
+                </div>
+                <div class="form-group">
+                    <label for="firstname">FirstName</label>
+                    <input type="text" required class="form-control" id="firstname" placeholder="John">
+                </div>
+                <div class="form-group">
+                    <label for="lastname">LastName</label>
+                    <input type="text" required class="form-control" id="lastname" placeholder="Doe">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="text" required class="form-control" id="email" placeholder="example12@gmail.com">
+                </div>
+                <button type="submit" class="btn btn-warning">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,108 @@
+/* general styles */
+:root{
+    --primary-color: #f1c40f;
+    --text-color: rgb(68, 64, 64);
+}
+html{
+    scroll-behavior: smooth;
+}
+/* header styles */
+header *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* nav */
+nav{
+    display: flex;
+    justify-content: space-around;
+    background: white;
+    padding: 0 8rem;
+    align-items: center;
+    position: fixed;
+    z-index: 50;
+    top: 0;
+    width: 100vw;
+    box-shadow: 0px 1px 5px rgb(110, 109, 109);
+}
+nav h2{
+    color: rgb(85, 78, 78);
+}
+nav .lists{
+    display: flex;
+    justify-content: space-between;
+    justify-self: center;
+    align-items: center;
+    height: 100%;
+}
+nav .lists li{
+    padding: 1.2rem 2rem;
+    list-style: none;
+    height: 100%;
+    display: block;
+    border-left: 1px #ffffff solid;
+    border-right: 1px #ffffff solid;
+    transition: .3s background ease-in-out;
+}
+nav .lists li a{
+    color: rgb(51, 45, 45);
+}
+nav .lists li:hover{
+    background: rgba(226, 226, 226, 0.356);
+    border-left: 1px rgb(238, 231, 231) solid;
+    border-right: 1px rgb(238, 231, 231) solid;
+}
+nav li.active{
+    background: var(--primary-color);
+}
+nav li.active:hover{
+    background-color: #ecc113;
+}
+
+/* about */
+.about{
+    margin-top: 6rem;
+}
+.about h2{
+    color: rgb(68, 64, 64);
+}
+/* who-are-we */
+.who-are-we h3, .what-we-do h3{
+    color: rgb(68, 64, 64);
+    margin: 3rem 0;
+    text-decoration: underline #c56810;
+}
+.what-we-do .col-md-4 h4{
+    color: rgb(46, 45, 45);
+    margin: .6rem 0;
+}
+.what-we-do .col-md-4 p{
+    color: rgb(85, 78, 78);
+}
+/* team */
+.team{
+margin-top:3em;
+}
+.grid_4 {
+    width: 22%;
+    float: left;
+    margin: 0 3% 0% 0;
+}
+.team-grid p {
+    font-size: 0.9em;
+    line-height: 1em;
+    color: #777;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.team-grid img {
+    width: 100%;
+    border-radius: 50%;
+}
+.team-grid h4{
+    color:rgb(51, 50, 48);
+    font-size: 1em;
+    font-weight: 600;
+    margin:0.6em 0;
+    text-align: center;
+}
